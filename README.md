@@ -46,14 +46,6 @@ Make sure you have Docker and Docker Compose installed on your system.
 - Node.js with Express: Port `8000`
 - MongoDB: Port `27017`
 
-## Directory Structure
-
-<project-directory>
-
-├── .env \
-├── docker-compose.yml \
-└── README.md
-
 ## Notes
 
 - This setup assumes that you're using the default ports for Redis, MongoDB, and Node.js. If you need to customize the ports or service names, make sure to update the .env file and docker-compose.yml accordingly.
