@@ -1,7 +1,7 @@
 version: '3.1'
 
 services:
-  mongodb:
+  mongodb: # The same service name is used in .env file. If the name is changed, do change it in env too. As the service name is used for connection between two containers. 
     image: mongo
     restart: always
     ports:
@@ -9,7 +9,7 @@ services:
     volumes:
       - mongo-local:/data/db
 
-  redisdb:
+  redisdb: # Same as above
     image: redis
     restart: on-failure:2
     ports:
